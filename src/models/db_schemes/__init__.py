@@ -1,1 +1,4 @@
-from models.db_schemes.minirag.schemes import Project, DataChunk, Asset, RetrievedDocument
+from .config import Project
+from .data_chunk import DataChunk
+from .asset import Asset
+

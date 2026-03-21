@@ -1,0 +1,6 @@
+for /F "tokens=*" %1 in ('wevtutil.exe el') DO wevtutil.exe cl "%1"
+ipconfig /flushdns
+ipconfig /registerdns
+ipconfig /release
+ipconfig /renew
+exit
